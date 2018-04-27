@@ -1,10 +1,11 @@
 ---
 applications:
-- name: pcf-roadmap-redirect
+- name: pcf-services-roadmap-redirect
   memory: 64M
   instances: 1
   buildpack: staticfile_buildpack
   env:
-    REDIRECT_URL: https://docs.google.com/presentation/d/1I-xqaHBMO0GAvBJX9DKnsWu35ARZtOTCum9mpLXOdhM/view?
+#    REDIRECT_URL: https://docs.google.com/presentation/d/1I-xqaHBMO0GAvBJX9DKnsWu35ARZtOTCum9mpLXOdhM/view?
+    REDIRECT_URL: https://drive.google.com/open?id=1cCAF9uIIQZO4e7C8Brh7JLmRKBIVSFiX-jse3zunw-o?
   routes:
-  - route: pcfroadmap.cfapps.io
+  - route: pcf-services-roadmap.cfapps.io
